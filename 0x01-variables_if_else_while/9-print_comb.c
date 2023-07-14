@@ -6,16 +6,16 @@
  */
 int main(void)
 {
-	char a;
+	int a;
 
-	for (a = '0'; a <= '9'; a++)
+	for (a = 0; a <= 9; a++)
 	{
-		if (!(a == '0'))
+		if (!(a == 0))
 		{
 			putchar(',');
 			putchar(' ');
 		}
-		putchar(a);
+		putchar(a + '0');
 	}
 	putchar('\n');
 	return (0);
