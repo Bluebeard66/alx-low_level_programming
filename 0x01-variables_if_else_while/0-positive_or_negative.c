@@ -12,14 +12,12 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	string sign;
 
 	if (n == 0)
-		sign = "zero";
+		printf("%f is zero", n);
 	else if (n > 0)
-		sign = "positive";
+		printf("%f is positive", n);
 	else
-		sign = "negative";
-	printf("%f is %s", n, sign);
+		printf("%f is negative", n);
 	return (0);
 }
