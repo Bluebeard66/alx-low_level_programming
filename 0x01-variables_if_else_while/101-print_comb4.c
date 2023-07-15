@@ -13,7 +13,7 @@ int main(void)
 		{
 			for (ones = 0; ones <= 9; ones++)
 			{
-				if (hands != tens && hends != ones && tens != ones
+				if (hands != tens && hands != ones && tens != ones
 && hands < tens && tens < ones)
 				{
 					putchar(hands + '0');
