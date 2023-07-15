@@ -19,7 +19,7 @@ int main(void)
 					putchar(hands + '0');
 					putchar(tens + '0');
 					putchar(ones + '0');
-					if (!((tens * 100) + (tens * 10) + ones == 89))
+					if (!((tens * 100) + (tens * 10) + ones == 789))
 				{
 					putchar(',');
 					putchar(' ');
