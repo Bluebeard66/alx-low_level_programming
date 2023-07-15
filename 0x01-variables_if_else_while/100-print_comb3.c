@@ -15,7 +15,7 @@ int main(void)
 			{
 				putchar(tens + '0');
 				putchar(ones + '0');
-				if (tens + ones == 89)
+				if (!(tens + ones == 89))
 				{
 					putchar(',');
 					putchar(' ');
