@@ -15,9 +15,7 @@ int main(void)
 			{
 				for (ones = 0; ones <= 9; ones++)
 				{
-					if (tho != hands && tho != tens && tho != ones
-&& hands != tens && hands != ones && tens != ones
-&& tho < hands && hands < tens && tens < ones)
+					if (tho * 10 + hands != tens * 10 + ones)
 					{
 						putchar(tho + '0');
 						putchar(hands + '0');
@@ -25,7 +23,7 @@ int main(void)
 						putchar(tens + '0');
 						putchar(ones + '0');
 					if (!((tho * 1000) + (hands * 100)
-+ (tens * 10) + ones == 789))
++ (tens * 10) + ones == 9899))
 					{
 						putchar(',');
 						putchar(' ');
