@@ -16,7 +16,7 @@ int main(void)
 			break;
 		if ((sum % 2) == 0)
 			result += sum;
-		fibo1 = fib2;
+		fibo1 = fibo2;
 		fibo2 = sum;
 	}
 	printf("%.0f\n", result);
