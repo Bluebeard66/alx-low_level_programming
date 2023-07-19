@@ -12,3 +12,4 @@ int main(void)
 			sum += count;
 	printf("%d\n", sum);
 	return (0);
+}
