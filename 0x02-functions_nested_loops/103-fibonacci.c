@@ -6,10 +6,10 @@
 
 int main(void)
 {
-	unsigned long fib1 = 0, fib2 = 1, sum;
+	unsigned long fibo1 = 0, fibo2 = 1, sum;
 	float result;
 
-	while (true)
+	while (1)
 	{
 		sum = fibo1 + fibo2;
 		if (sum > 4000000)
