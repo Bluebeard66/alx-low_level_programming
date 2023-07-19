@@ -12,7 +12,7 @@ int main(void)
 	for (num = 0; num < 50; num++)
 	{
 		result = fibo1 + fibo2;
-		printf("%lu", res);
+		printf("%lu", result);
 		fibo1 = fibo2;
 		fibo2 = result;
 		if (num != 49)
