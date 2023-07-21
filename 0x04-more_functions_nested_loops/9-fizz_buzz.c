@@ -1,18 +1,19 @@
-#include "stdio.h"
+#include <stdio.h>
 /**
- * main - prints the fizz-buzz test
- * Return: 0
+ * main - prints the fizz buzz test
  */
-int main(void)
+void main(void)
 {
-	int c, r3, r5;
+	int i, r3, r5;
 
-	for (c = 1; c <= 100; c++)
+	for (i = 0; i <= 100; i++)
 	{
-		r3 = c % 3;
-		r5 = c % 5;
+	r3 = i % 3;
+	r5 = i % 5;
 	if ((r3 != 0) && (r5 != 0))
-		printf("%d", c);
+	{
+	printf("%d", i);
+	}
 	else
 	{
 	if (r3 == 0)
@@ -20,8 +21,8 @@ int main(void)
 	if (r5 == 0)
 		printf("Buzz");
 	}
-	printf(" ");
+	if (i != 100)
+		printf(" ");
 	}
 	printf("\n");
-	return (0);
 }
