@@ -7,6 +7,7 @@ int main(void)
 {
 	long n = 612852475143;
 	int c = 0;
+
 	while (c++ < n / 2)
 	{
 		if (n % c == 0)
