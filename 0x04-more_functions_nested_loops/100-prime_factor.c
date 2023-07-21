@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - prints the largest prime factor of the number 612852475143
- * Return: 0
+ *main - prints the largest prime factor of 612852475143
+ *Return: 0
  */
 int main(void)
 {
@@ -10,14 +10,16 @@ int main(void)
 
 	n = i;
 	for (c = 2; c <= n / 2; c++)
+	{
 		if (n % c == 0)
 		{
 			isprime = 0;
 			n = n / c;
 		}
-	if (isprime != 1)
-		printf("%d", c);
+	}
+	if (isprime == 0)
+		printf("%li\n", c);
 	else
-		printf("%d is a prime number\n", i);
+		printf("%li is a prime number\n", i);
 	return (0);
 }
