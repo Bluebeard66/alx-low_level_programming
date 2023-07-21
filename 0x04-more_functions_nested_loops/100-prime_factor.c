@@ -12,8 +12,8 @@ int main(void)
 		if (n % c == 0)
 		{
 			n /= 2;
+			continue;
 		}
-		else
 		for (c = 3; c < n / 2; c += 2)
 		{
 			if (n % c == 0)
@@ -23,4 +23,4 @@ int main(void)
 	}
 	printf("%ld\n", n);
 	return (0);
-
+}
