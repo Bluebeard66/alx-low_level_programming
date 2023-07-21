@@ -1,4 +1,4 @@
-#include "main.h"
+#include "stdio.h"
 /**
  * main - prints the fizz-buzz test
  * Return: 0
@@ -20,7 +20,7 @@ int main(void)
 	if (r5 == 0)
 		printf("Buzz");
 	}
-	printf(' ');
+	printf(" ");
 	}
 	return (0);
 }
