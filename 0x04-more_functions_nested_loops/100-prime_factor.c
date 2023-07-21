@@ -5,20 +5,21 @@
  */
 int main(void)
 {
-	long c, n, i = 612852475143;
+	long r, c, n, i = 612852475143;
 	int isprime = 1;
 
 	n = i;
-	for (c = 2; c <= n / 2; c++)
+	for (c = 2; c < (n / 2); c++)
 	{
 		if (n % c == 0)
 		{
 			isprime = 0;
 			n = n / c;
+			r = c;
 		}
 	}
 	if (isprime == 0)
-		printf("%li\n", c);
+		printf("%li\n", r);
 	else
 		printf("%li is a prime number\n", i);
 	return (0);
