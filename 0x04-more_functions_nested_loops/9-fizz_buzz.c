@@ -6,7 +6,7 @@ void main(void)
 {
 	int i, r3, r5;
 
-	for (i = 0; i <= 100; i++)
+	for (i = 1; i <= 100; i++)
 	{
 	r3 = i % 3;
 	r5 = i % 5;
@@ -15,14 +15,14 @@ void main(void)
 	printf("%d", i);
 	}
 	else
-	{
-	if (r3 == 0)
-		printf("Fizz");
-	if (r5 == 0)
-		printf("Buzz");
-	}
-	if (i != 100)
-		printf(" ");
-	}
+		{
+		if (r3 == 0)
+			printf("Fizz");
+		if (r5 == 0)
+			printf("Buzz");
+		}
+		if (i != 100)
+			printf(" ");
+		}
 	printf("\n");
 }
