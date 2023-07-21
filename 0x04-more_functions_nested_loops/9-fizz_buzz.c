@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
  * main - prints the fizz buzz test
+ * Return: 0
  */
-void main(void)
+int main(void)
 {
 	int i, r3, r5;
 
@@ -25,4 +26,5 @@ void main(void)
 			printf(" ");
 		}
 	printf("\n");
+	return (0);
 }
